@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "secretStore": null,
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.KeyVault/vaults/keyvault-poc-julio",
+      "type": "secrets.keyVault",
+      "connectionId": "VaultUri"
+    },
+    "secrets2": {
+      "type": "secrets.user"
+    },
+    "appInsights1": {
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/microsoft.insights/components/insights-poc-julio",
+      "type": "appInsights.azure",
+      "connectionId": "APPLICATIONINSIGHTS_CONNECTION_STRING"
+    },
+    "cosmosdb1": {
+      "secretStore": "AzureKeyVault",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.DocumentDB/databaseAccounts/cosmos-poc-julio",
+      "type": "cosmosdb.azure",
+      "connectionId": "ConnectionStrings:cosmos-poc-julio"
+    }
+  }
+}

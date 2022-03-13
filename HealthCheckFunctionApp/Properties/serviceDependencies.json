@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "type": "secrets",
+      "connectionId": "VaultUri"
+    },
+    "secrets2": {
+      "type": "secrets"
+    },
+    "appInsights1": {
+      "type": "appInsights",
+      "connectionId": "APPLICATIONINSIGHTS_CONNECTION_STRING"
+    },
+    "cosmosdb1": {
+      "type": "cosmosdb",
+      "connectionId": "ConnectionStrings:cosmos-poc-julio"
+    }
+  }
+}
